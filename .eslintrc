@@ -1,0 +1,76 @@
+{
+    "root": true,
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": { "project": ["./tsconfig.json"] },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "rules": {
+        "@typescript-eslint/await-thenable": "error",
+        "@typescript-eslint/dot-notation": "error",
+        "@typescript-eslint/explicit-member-accessibility": [
+          "error",
+          {
+            "accessibility": "explicit",
+            "overrides": {
+              "constructors": "explicit"
+            }
+          }
+        ],
+        "@typescript-eslint/no-empty-function": "error",
+        "@typescript-eslint/no-require-imports": "error",
+        "@typescript-eslint/no-unused-expressions": "error",
+        "@typescript-eslint/no-var-requires": "error",
+        "@typescript-eslint/prefer-namespace-keyword": "error",
+        "@typescript-eslint/no-explicit-any": "error",
+        "@typescript-eslint/no-floating-promises": "off",
+        "@typescript-eslint/no-inferrable-types": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/promise-function-async": "off",
+        "@typescript-eslint/no-use-before-define": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/ban-types": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+    
+        // Enabled: eslint
+        "no-param-reassign": ["error", { "props": true }],
+        "default-case": "error",
+        "no-return-await": "error",
+        "eqeqeq": ["error", "smart"],
+        "id-denylist": ["error", "any", "Undefined", "undefined"],
+        "id-match": "error",
+        "no-caller": "error",
+        "no-cond-assign": "error",
+        "no-debugger": "error",
+        "no-eval": "error",
+        "no-new-wrappers": "error",
+        "no-redeclare": "error",
+        "prefer-const": "error",
+        "prefer-object-spread": "error",
+        "radix": "error",
+    
+        // Disabled: eslint
+        "guard-for-in": "off",
+        "no-empty": "off",
+        "no-invalid-this": "off",
+        "no-magic-numbers": "off",
+        "no-null/no-null": "off",
+        "no-shadow": "off",
+        "no-trailing-spaces": "off",
+        "no-underscore-dangle": "off",
+        "no-var": "off",
+        "no-unused-vars": "off",
+        "no-case-declarations": "off",
+        "no-constant-condition": "off",
+        "no-dupe-class-members": "off"
+    }
+}
